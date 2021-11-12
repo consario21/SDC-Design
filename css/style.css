@@ -1,0 +1,23 @@
+@import url('http://fonts.cdnfonts.com/css/avenir-lt-std');
+
+.small_font-size{
+    font-size : 0.8rem;
+}
+
+.page_active{
+    background-color: rgba(0,0,0,0.8);
+    color : white;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.search_b:focus-visible{
+    border : none!important;
+    outline : none;
+}
+
+select{
+    background-color: transparent;
+    border-width : 0px;
+}

@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- style css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- all -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+
+            <div class="col-1 responsive-image">
+                <img src="img/icon/Logo.png" class="" style="width : 60px; height : 60px;" alt="Logo">          
+            </div>
+
+            <div class="col-lg-8 d-none d-lg-flex align-items-center">
+                <a href="#" class="nav-link text-dark small_font-size font-weight-bold">HOME</a>
+                <a href="#" class="nav-link text-dark small_font-size font-weight-bold">SHOP</a>
+                <a href="#" class="nav-link text-dark small_font-size font-weight-bold">MAGAZINE</a>
+            </div>
+
+            <div class="col-3 col-sm-11 d-flex justify-content-end align-items-center" style="height : 60px">
+                <img src="img/icon/Cart_Button.png" alt="Cart_Button">
+                <div class="ml-4">
+                    <a href="#" class="nav-link text-dark small_font-size font-weight-bold">LOGIN</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-5 d-flex">
+            <div class="col-1 d-flex justify-content-center align-items-center">
+                <img src="img/icon/Search.png" style="width : 35px; height :35px;" alt="Search">
+            </div>
+            <div class="col-8 d-flex justify-content-between align-items-center px-0" style="height : 30px;border-bottom: 2px solid black; transform : translateY(4px);margin-left : 30px;">
+                    <form action="#" method="POST" class="w-75">
+                        <input type="text" class="w-100 border-0 search_b" name="text" id="text" value="living room"> 
+                    </form>
+
+                    <div class="w-25 d-flex justify-content-between align-items-center px-0">
+                        <small class="mr-3">
+                            Powered by Algolia
+                        </small>
+
+                        <img src="img/icon/Sajari_Logo.png" alt="Sajari_Logo">
+                    </div>
+            </div>
+            <form action="#" class="col-2 p-0" style="height : 30px;border-bottom: 1px solid rgba(0,0,0,0.6); transform : translateY(4px);margin-left : 30px;">
+                <select name="match" id="match" class="w-100">
+                    <option value="Best match">Best match</option>
+                </select>
+            </form>
+
+        </div>
+
+        <div class="row mt-5">
+
+            <div class="col-3">
+                <small style="opacity: 0.5;">
+                    FILTER BY
+                </small>
+                <form action="#" method="get" style="transform : translateY(4px); opacity : 0.7">
+                    <div class="w-100 d-flex align-items-center py-2 mb-3" style="border-bottom: 2px solid rgba(0,0,0,0.2);">
+                        <select name="filter1" id="filter1" class="w-100" style="font-size : 0.9rem;">
+                            <option value="Collection" class="px-0 py-3">
+                                Collection
+                            </option>
+                        </select>
+                    </div>
+
+                    <div class="w-100 d-flex align-items-center py-2 mb-3" style="border-bottom: 2px solid rgba(0,0,0,0.2);">
+                        <select name="filter1" id="filter1" class="w-100" style="font-size : 0.9rem;">
+                            <option value="Color" class="px-0 py-3">
+                                Color
+                            </option>
+                        </select>
+                    </div>
+
+                    <div class="w-100 d-flex align-items-center py-2 mb-3" style="border-bottom: 2px solid rgba(0,0,0,0.2);">
+                        <select name="filter1" id="filter1" class="w-100" style="font-size : 0.9rem;">
+                            <option value="Category" class="px-0 py-3">
+                                Category
+                            </option>
+                        </select>
+                    </div>
+
+                    <div class="w-100 d-flex align-items-center py-2 mb-3" style="border-bottom: 2px solid rgba(0,0,0,0.2);">
+                        <select name="filter1" id="filter1" class="w-100" style="font-size : 0.9rem;">
+                            <option value="Price Range" class="px-0 py-3">
+                                Price Range
+                            </option>
+                        </select>
+                    </div>
+                </form>
+               
+                <form action="#" method="get" class="w-100">
+                    <input type="range" name="price_range" id="price_range" class="w-100">
+                </form>
+
+                <div class="d-flex justify-content-between align-items-center p-0 pb-2" style="border-bottom: 1px solid rgba(0,0,0,0.2); transform : translateY(4px);">
+                    <i class="far fa-circle" style="font-size : 0.9rem;transform : translateY(15px);"></i>
+                    <i class="far fa-circle" style="font-size : 0.9rem;transform : translateY(15px);"></i>
+                </div>
+                <div class="d-flex justify-content-between align-items-center p-0 pb-2 mt-4">
+                    <small>$0</small>
+                    <small>$10,000+</small>
+                </div>
+
+            </div>
+
+            <div class="col-3 mb-5">
+                <img src="img/living-room-g21f7797af_1280.jpg" alt="room_1" class="responsive-image" style="width : 100%;">
+                <div class="px-2">
+                    <div class="d-flex justify-content-between align-items-center my-2">
+                        <strong style="font-size : 0.8rem;">Coombes</strong>
+                        <span style="font-size : 0.8rem;">$2,600</span>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center my-2">
+                        <div>
+                            <div>
+                                <div style="opacity : 0.8;">
+                                    <small>
+                                        LOUNGE
+                                    </small>
+                                </div>
+                            </div>
+                            <div>
+                                <img src="img/icon/Star_On.png" alt="star on">
+                                <img src="img/icon/Star_On.png" alt="star on">
+                                <img src="img/icon/Star_On.png" alt="star on">
+                                <img src="img/icon/Star_On.png" alt="star on">
+                                <img src="img/icon/Star.png" alt="star">
+                            </div>
+                        </div>
+                        <img src="img/icon/Cart_Button.png" alt="cart button">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-3 mb-5">
+                <img src="img/brick-wall-g7c76e9f33_1280.jpg" alt="room_2" class="responsive-image" style="width : 100%;">
+                <div class="px-2">
+                    <div class="d-flex justify-content-between align-items-center my-2">
+                        <strong style="font-size : 0.8rem;">Keeve set</strong>
+                        <span style="font-size : 0.8rem;">$590</span>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center my-2">
+                        <div>
+                            <div>
+                                <div style="opacity : 0.8;">
+                                    <small>
+                                        TABLE & CHAIRS
+                                    </small>
+                                </div>
+                            </div>
+                            <div>
+                                <img src="img/icon/Star_On.png" alt="star on">
+                                <img src="img/icon/Star_On.png" alt="star on">
+                                <img src="img/icon/Star_On.png" alt="star on">
+                                <img src="img/icon/Star_On.png" alt="star on">
+                                <img src="img/icon/Star.png" alt="star">
+                            </div>
+                        </div>
+                        <img src="img/icon/Cart_Button.png" alt="cart button">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-3 mb-5">
+                <img src="img/cafe-g15ced43b8_1280.jpg" alt="room_3" class="responsive-image" style="width : 100%;">
+                <div class="px-2">
+                    <div class="d-flex justify-content-between align-items-center my-2">
+                        <strong style="font-size : 0.8rem;">Nillè</strong>
+                        <span style="font-size : 0.8rem;">$950</span>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center my-2">
+                        <div>
+                            <div>
+                                <div style="opacity : 0.8;">
+                                    <small>
+                                        ARMCHAIR
+                                    </small>
+                                </div>
+                            </div>
+                            <div>
+                                <img src="img/icon/Star_On.png" alt="star on">
+                                <img src="img/icon/Star_On.png" alt="star on">
+                                <img src="img/icon/Star_On.png" alt="star on">
+                                <img src="img/icon/Star_On.png" alt="star on">
+                                <img src="img/icon/Star_On.png" alt="star on">
+                            </div>
+                        </div>
+                        <img src="img/icon/Cart_Button.png" alt="cart button">
+                    </div>
+                </div>
+            </div>
+                  
+            
+            <div class="col-3 mb-5">
+                <img src="img/workplace-g45d76b3c8_1280.jpg" alt="room_4" class="responsive-image" style="width : 100%;">
+                <div class="px-2">
+                    <div class="d-flex justify-content-between align-items-center my-2">
+                        <strong style="font-size : 0.8rem;">Blanko</strong>
+                        <span style="font-size : 0.8rem;">$90</span>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center my-2">
+                        <div>
+                            <div>
+                                <div style="opacity : 0.8;">
+                                    <small>
+                                        SIDE TABLE
+                                    </small>
+                                </div>
+                            </div>
+                            <div>
+                                <img src="img/icon/Star_On.png" alt="star on">
+                                <img src="img/icon/Star_On.png" alt="star on">
+                                <img src="img/icon/Star_On.png" alt="star on">
+                                <img src="img/icon/Star_On.png" alt="star on">
+                                <img src="img/icon/Star.png" alt="star">
+                            </div>
+                        </div>
+                        <img src="img/icon/Cart_Button.png" alt="cart button">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-3 mb-5">
+                <img src="img/couch-ge0bbfe707_1280.jpg" alt="room_5" class="responsive-image" style="width : 100%;">
+                <div class="px-2">
+                    <div class="d-flex justify-content-between align-items-center my-2">
+                        <strong style="font-size : 0.8rem;">Momo</strong>
+                        <span style="font-size : 0.8rem;">$850</span>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center my-2">
+                        <div>
+                            <div>
+                                <div style="opacity : 0.8;">
+                                    <small>
+                                        SHELVES
+                                    </small>
+                                </div>
+                            </div>
+                            <div>
+                                <img src="img/icon/Star_On.png" alt="star on">
+                                <img src="img/icon/Star_On.png" alt="star on">
+                                <img src="img/icon/Star_On.png" alt="star on">
+                                <img src="img/icon/Star_On.png" alt="star on">
+                                <img src="img/icon/Star.png" alt="star">
+                            </div>
+                        </div>
+                        <img src="img/icon/Cart_Button.png" alt="cart button">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-3 mb-5">
+                <img src="img/chairs-gebc018e6b_1280.jpg" alt="room_6" class="responsive-image" style="width : 100%;">
+                <div class="px-2">
+                    <div class="d-flex justify-content-between align-items-center my-2">
+                        <strong style="font-size : 0.8rem;">Penemillè</strong>
+                        <span style="font-size : 0.8rem;">$120</span>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center my-2">
+                        <div>
+                            <div>
+                                <div style="opacity : 0.8;">
+                                    <small>
+                                        CHAIR
+                                    </small>
+                                </div>
+                            </div>
+                            <div>
+                                <img src="img/icon/Star_On.png" alt="star on">
+                                <img src="img/icon/Star_On.png" alt="star on">
+                                <img src="img/icon/Star_On.png" alt="star on">
+                                <img src="img/icon/Star_On.png" alt="star on">
+                                <img src="img/icon/Star.png" alt="star">
+                            </div>
+                        </div>
+                        <img src="img/icon/Cart_Button.png" alt="cart button">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-3 mb-5">
+                <img src="img/bedroom-gbbb3c9f4e_1280.jpg" alt="room_7" class="responsive-image" style="width : 100%;">
+                <div class="px-2">
+                    <div class="d-flex justify-content-between align-items-center my-2">
+                        <strong style="font-size : 0.8rem;">KAPPU</strong>
+                        <span style="font-size : 0.8rem;">$420</span>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center my-2">
+                        <div>
+                            <div>
+                                <div style="opacity : 0.8;">
+                                    <small>
+                                        SHELVES
+                                    </small>
+                                </div>
+                            </div>
+                            <div>
+                                <img src="img/icon/Star_On.png" alt="star on">
+                                <img src="img/icon/Star_On.png" alt="star on">
+                                <img src="img/icon/Star_On.png" alt="star on">
+                                <img src="img/icon/Star_On.png" alt="star on">
+                                <img src="img/icon/Star.png" alt="star">
+                            </div>
+                        </div>
+                        <img src="img/icon/Cart_Button.png" alt="cart button">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="col-md-6 d-flex justify-content-between mb-5" style="flex-wrap : wrap;">
+                <a href="#" class="page_active small_font-size font-weight-bold px-2 py-1">
+                    <small>
+                        1
+                    </small>
+                </a>
+                <a href="#">
+                    <small class="text-dark">
+                        2
+                    </small>
+                </a>
+                <a href="#">
+                    <small class="text-dark">
+                        3
+                    </small>
+                </a>
+                <a href="#">
+                    <small class="text-dark">
+                        4
+                    </small>
+                </a>
+                <a href="#">
+                    <small class="text-dark">
+                        5
+                    </small>
+                </a>
+                <a href="#">
+                    <small class="text-dark">
+                        6
+                    </small>
+                </a>
+                <a href="#">
+                    <small class="text-dark">
+                        7
+                    </small>
+                </a>
+                
+                <a href="#">
+                    <small class="text-dark">
+                        8
+                    </small>
+                </a>
+
+                <a href="#">
+                    <small class="text-dark">
+                        9
+                    </small>
+                </a>
+
+                <a href="#">
+                    <small class="text-dark">
+                        10
+                    </small>
+                </a>
+
+                <a href="#" class="text-dark">
+                    <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
